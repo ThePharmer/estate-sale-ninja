@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Estate Sales</name>
+    <description>Estate sale locations with details</description>
+
+    <Style id="estateIcon">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Placemark>
+      <name>Modern MCM Condo near Cranbrook</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Bloomfield-Hills/48304/4696542" target="_blank">Modern MCM Condo near Cranbrook</a></h3>
+<p><strong>Hours:</strong> Sat 10am-4pm, Sun 11am-4pm</p>
+<p><strong>Notes:</strong> Park on one side of street</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>971 Stratford Ln, Bloomfield Hills, MI 48304</address>
+    </Placemark>
+    <Placemark>
+      <name>50% off Saturday JP McCarthy Home</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Bloomfield-Hills/48304/4709457" target="_blank">50% off Saturday JP McCarthy Home</a></h3>
+<p><strong>Hours:</strong> Fri 12pm-5pm, Sat 12pm-3pm (50% OFF)</p>
+<p><strong>Notes:</strong> No parking in driveway; park on street</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>1299 Orchard Ridge Road, Bloomfield Hills, MI 48304</address>
+    </Placemark>
+    <Placemark>
+      <name>Bloomfield Hills Estate Sale</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Bloomfield-Hills/48302/4680639" target="_blank">Bloomfield Hills Estate Sale</a></h3>
+<p><strong>Hours:</strong> Sat 10am-4pm, Sun 10am-4pm</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>1920 Pine Ridge Ln, Bloomfield Hills, MI 48302</address>
+    </Placemark>
+    <Placemark>
+      <name>Birmingham Packed Sale</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Birmingham/48009/4665792" target="_blank">Birmingham Packed Sale</a></h3>
+<p><strong>Hours:</strong> Thu 10am-4pm, Fri 10am-4pm, Sat 10am-4pm (50% OFF), Sun 10am-4pm</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>1574 Chapin, Birmingham, MI 48009</address>
+    </Placemark>
+    <Placemark>
+      <name>HAM Radio Collection 50% off</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Royal-Oak/48073/4672176" target="_blank">HAM Radio Collection 50% off</a></h3>
+<p><strong>Hours:</strong> Fri 9am-4pm, Sat 9am-4pm (50% OFF)</p>
+<p><strong>Notes:</strong> Don't block driveways</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>4163 Amherst Rd, Royal Oak, MI 48073</address>
+    </Placemark>
+    <Placemark>
+      <name>LAST DAY 50% OFF EVERYTHING</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Royal-Oak/48073/4701183" target="_blank">LAST DAY 50% OFF EVERYTHING</a></h3>
+<p><strong>Hours:</strong> Wed 9am-4pm, Thu 9am-4pm, Fri 9am-4pm (25% OFF), Sat 9am-4pm (50% OFF)</p>
+<p><strong>Notes:</strong> Street parking only</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>2231 Elmhurst Avenue, Royal Oak, MI 48073</address>
+    </Placemark>
+    <Placemark>
+      <name>Troy Estate Sale</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Troy/48085/4622019" target="_blank">Troy Estate Sale</a></h3>
+<p><strong>Hours:</strong> Thu 9am-4pm, Fri 9am-4pm, Sat 9am-4pm</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>4745 Alton, Troy, MI 48085</address>
+    </Placemark>
+    <Placemark>
+      <name>TREMENDOUS TROY SALE</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Troy/48085/4697769" target="_blank">TREMENDOUS TROY SALE</a></h3>
+<p><strong>Hours:</strong> Fri 10am-4pm, Sat 9am-2pm, Sun 9am-1pm</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>6764 Redford Circle, Troy, MI 48085</address>
+    </Placemark>
+    <Placemark>
+      <name>Whole House Sale Troy</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Troy/48098/4649016" target="_blank">Whole House Sale Troy</a></h3>
+<p><strong>Hours:</strong> Sat 10am-4pm, Sun 10am-2pm</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>1651 Redbud Drive, Troy, MI 48098</address>
+    </Placemark>
+    <Placemark>
+      <name>50% OFF MCM West Bloomfield</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/West-Bloomfield/48322/4709082" target="_blank">50% OFF MCM West Bloomfield</a></h3>
+<p><strong>Hours:</strong> Fri 10am-4pm, Sat 10am-4pm (50% OFF most items)</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>5495 Kingsfield Dr, West Bloomfield, MI 48322</address>
+    </Placemark>
+    <Placemark>
+      <name>WEST BLOOMFIELD ESTATE SALE</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/West-Bloomfield/48324/4700844" target="_blank">WEST BLOOMFIELD ESTATE SALE</a></h3>
+<p><strong>Hours:</strong> Fri 10am-4pm, Sat 10am-4pm, Sun 10am-2pm</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>2311 Keylon Drive, West Bloomfield, MI 48324</address>
+    </Placemark>
+    <Placemark>
+      <name>Pottery Barn Furniture</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Rochester-Hills/48306/4706406" target="_blank">Pottery Barn Furniture</a></h3>
+<p><strong>Hours:</strong> Fri 10am-4pm, Sat 10am-4pm</p>
+<p><strong>Notes:</strong> Park on one side of street only</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>1766 Snowden Circle, Rochester Hills, MI 48306</address>
+    </Placemark>
+    <Placemark>
+      <name>Rochester Hills Whole Home</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Rochester-Hills/48309/4703784" target="_blank">Rochester Hills Whole Home</a></h3>
+<p><strong>Hours:</strong> Sat 10am-4pm, Sun 10am-4pm</p>
+<p><strong>Notes:</strong> Residential road parking; follow signs</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>184 Shagbark, Rochester Hills, MI 48309</address>
+    </Placemark>
+    <Placemark>
+      <name>25% OFF HUGE WHOLE HOUSE</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Rochester/48306/4707744" target="_blank">25% OFF HUGE WHOLE HOUSE</a></h3>
+<p><strong>Hours:</strong> Thu 10am-4pm, Fri 10am-4pm, Sat 10am-4pm (25% OFF), Sun 10am-4pm</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>4871 Cider Hill Dr, Rochester, MI 48306</address>
+    </Placemark>
+    <Placemark>
+      <name>Sensational STERLING HEIGHTS</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Sterling-Heights/48310/4646778" target="_blank">Sensational STERLING HEIGHTS</a></h3>
+<p><strong>Hours:</strong> Thu 10am-4pm, Fri 10am-4pm, Sat 10am-4pm</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>4732 Barcroft Way, Sterling Heights, MI 48310</address>
+    </Placemark>
+    <Placemark>
+      <name>HUGE Sterling Heights Sale</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Sterling-Heights/48314/4707036" target="_blank">HUGE Sterling Heights Sale</a></h3>
+<p><strong>Hours:</strong> Sat 9am-4pm, Sun 10am-3pm</p>
+<p><strong>Notes:</strong> Park in street</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>43855 Pinot Noir, Sterling Heights, MI 48314</address>
+    </Placemark>
+    <Placemark>
+      <name>Estate Sale with Antiques</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Sterling-Heights/48312/4708395" target="_blank">Estate Sale with Antiques</a></h3>
+<p><strong>Hours:</strong> Fri 9am-4pm, Sat 9am-4pm, Sun 9am-4pm</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>35604 Alta Vista Drive, Sterling Heights, MI 48312</address>
+    </Placemark>
+    <Placemark>
+      <name>Warren Watch Repairman</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Warren/48092/4693242" target="_blank">Warren Watch Repairman</a></h3>
+<p><strong>Hours:</strong> Sat 9am-5pm, Sun 10am-4pm, Mon 10am-4pm</p>
+<p><strong>Notes:</strong> Plenty of street parking; driveway for handicapped</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>27480 Grobbel, Warren, MI 48092</address>
+    </Placemark>
+    <Placemark>
+      <name>Music and Art Lovers Warren</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Warren/48092/4715829" target="_blank">Music and Art Lovers Warren</a></h3>
+<p><strong>Hours:</strong> Sat 10am-5pm, Sun 11am-5pm</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>32486 Dequindre Rd, Warren, MI 48092</address>
+    </Placemark>
+    <Placemark>
+      <name>50% Off Packed Warren</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Warren/48089/4711755" target="_blank">50% Off Packed Warren</a></h3>
+<p><strong>Hours:</strong> Fri 10am-4pm, Sat 11am-4pm (50% OFF), Sun 11am-2pm</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>12178 Stephens, Warren, MI 48089</address>
+    </Placemark>
+    <Placemark>
+      <name>25% OFF St Clair Shores</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Saint-Clair-Shores/48081/4641459" target="_blank">25% OFF St Clair Shores</a></h3>
+<p><strong>Hours:</strong> Fri 10am-4pm, Sat 10am-5pm, Sun 11am-4pm</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>28806 Jane, Saint Clair Shores, MI 48081</address>
+    </Placemark>
+    <Placemark>
+      <name>MOVING &amp; Antique Tool Sale</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Grosse-Pointe/48236/4714548" target="_blank">MOVING &amp; Antique Tool Sale</a></h3>
+<p><strong>Hours:</strong> Fri 8am-4pm, Sat 9am-5pm</p>
+<p><strong>Notes:</strong> Park in street</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>20363 Sunningdale Park, Grosse Pointe, MI 48236</address>
+    </Placemark>
+    <Placemark>
+      <name>Macomb Township Liquidation</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Macomb-Township/48044/4711101" target="_blank">Macomb Township Liquidation</a></h3>
+<p><strong>Hours:</strong> Fri 11am-6pm, Sat 10am-6pm, Sun 10am-4pm</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>18626 Fernlea, Macomb Township, MI 48044</address>
+    </Placemark>
+    <Placemark>
+      <name>Macomb Treasures Estate Sale</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Macomb/48042/4696458" target="_blank">Macomb Treasures Estate Sale</a></h3>
+<p><strong>Hours:</strong> Thu 10am-4pm, Fri 10am-4pm, Sat 10am-4pm, Sun 10am-2pm</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>23229 Rochelle, Macomb, MI 48042</address>
+    </Placemark>
+    <Placemark>
+      <name>Magnificent Macomb 50% Off</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Macomb/48042/4708743" target="_blank">Magnificent Macomb 50% Off</a></h3>
+<p><strong>Hours:</strong> Fri 10am-4pm, Sat 10am-4pm (50% OFF)</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>49714 Lakewood St, Macomb, MI 48042</address>
+    </Placemark>
+    <Placemark>
+      <name>30% OFF PACKED Shelby Twp</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Shelby-Township/48315/4702830" target="_blank">30% OFF PACKED Shelby Twp</a></h3>
+<p><strong>Hours:</strong> Thu 10am-4pm, Fri 10am-4pm, Sat 10am-4pm, Sun 10am-4pm</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>48205 Conifer Dr, Shelby Township, MI 48315</address>
+    </Placemark>
+    <Placemark>
+      <name>50% OFF BLOWOUT Utica</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Utica/48315/4710543" target="_blank">50% OFF BLOWOUT Utica</a></h3>
+<p><strong>Hours:</strong> Fri 10am-4pm, Sat 10am-3pm (50% OFF)</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>14760 Ashton Ln, Utica, MI 48315</address>
+    </Placemark>
+    <Placemark>
+      <name>25% OFF Ray Estate Sale</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Ray/48096/4681839" target="_blank">25% OFF Ray Estate Sale</a></h3>
+<p><strong>Hours:</strong> Fri 10am-4pm, Sat 10am-4pm, Sun 10am-4pm</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>16465 28th Mile Rd, Ray, MI 48096</address>
+    </Placemark>
+    <Placemark>
+      <name>Mid century sale Farmington</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Farmington-Hills/48331/4716933" target="_blank">Mid century sale Farmington</a></h3>
+<p><strong>Hours:</strong> Sat 10am-4pm, Sun 10am-3pm</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>28090 Hickory Dr, Farmington Hills, MI 48331</address>
+    </Placemark>
+    <Placemark>
+      <name>Estate Sale Farmington Hills</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Farmington-Hills/48336/4715094" target="_blank">Estate Sale Farmington Hills</a></h3>
+<p><strong>Hours:</strong> Fri 10am-4pm, Sat 10am-4pm, Sun 12pm-4pm</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>25630 Branchaster, Farmington Hills, MI 48336</address>
+    </Placemark>
+    <Placemark>
+      <name>Big Estate Sale Farmington</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Farmington/48334/4715544" target="_blank">Big Estate Sale Farmington</a></h3>
+<p><strong>Hours:</strong> Fri 9am-6pm, Sat 9am-5pm, Sun 9am-3pm</p>
+<p><strong>Notes:</strong> Park on street the garage is on</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>30080 Highmeadow, Farmington, MI 48334</address>
+    </Placemark>
+    <Placemark>
+      <name>50% Off Steinway Piano Novi</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Novi/48375/4713717" target="_blank">50% Off Steinway Piano Novi</a></h3>
+<p><strong>Hours:</strong> Thu 10am-4pm, Fri 10am-2pm, Sat 10am-4pm (50% OFF select items)</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>20855 Chase Drive, Novi, MI 48375</address>
+    </Placemark>
+    <Placemark>
+      <name>25% OFF Wixom Estate Sale</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Wixom/48393/4497648" target="_blank">25% OFF Wixom Estate Sale</a></h3>
+<p><strong>Hours:</strong> Fri 10am-4pm, Sat 10am-4pm, Sun 10am-4pm</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>1397 Flamingo, Wixom, MI 48393</address>
+    </Placemark>
+    <Placemark>
+      <name>Estate Sales Antiques Northville</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Northville/48167/4699869" target="_blank">Estate Sales Antiques Northville</a></h3>
+<p><strong>Hours:</strong> Thu 10am-5pm, Fri 9am-4pm, Sat 9am-4pm, Sun 11am-5pm</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>48120 Eight Mile, Northville, MI 48167</address>
+    </Placemark>
+    <Placemark>
+      <name>Northville Condo Contents</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Northville/48168/4704783" target="_blank">Northville Condo Contents</a></h3>
+<p><strong>Hours:</strong> Sat 10am-4pm, Sun 10am-4pm</p>
+<p><strong>Notes:</strong> Observe posted parking regulations</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>18339 Blue Heron Drive East, Northville, MI 48168</address>
+    </Placemark>
+    <Placemark>
+      <name>30% OFF Fine Art Northville</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Northville/48167/4661193" target="_blank">30% OFF Fine Art Northville</a></h3>
+<p><strong>Hours:</strong> Fri 10am-4pm, Sat 10am-4pm, Sun 10am-4pm</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>21333 Woodhill Dr, Northville, MI 48167</address>
+    </Placemark>
+    <Placemark>
+      <name>Plymouth Estate Sale</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Plymouth/48170/4635915" target="_blank">Plymouth Estate Sale</a></h3>
+<p><strong>Hours:</strong> Fri 10am-4pm, Sat 10am-4pm (50% OFF), Sun 10am-3pm</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>9469 Baywood Drive, Plymouth, MI 48170</address>
+    </Placemark>
+    <Placemark>
+      <name>Lovely Canton home</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Canton/48188/4708398" target="_blank">Lovely Canton home</a></h3>
+<p><strong>Hours:</strong> Sat 11am-4pm, Sun 12pm-4pm</p>
+<p><strong>Notes:</strong> Driveway for pickups only</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>3898 Brookside Dr, Canton, MI 48188</address>
+    </Placemark>
+    <Placemark>
+      <name>25% OFF Livonia Estate Sale</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Livonia/48154/4662384" target="_blank">25% OFF Livonia Estate Sale</a></h3>
+<p><strong>Hours:</strong> Fri 9am-4pm, Sat 9am-3pm, Sun 9am-1pm</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>16316 Aldrich St, Livonia, MI 48154</address>
+    </Placemark>
+    <Placemark>
+      <name>Great Livonia Sale</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Livonia/48154/4708737" target="_blank">Great Livonia Sale</a></h3>
+<p><strong>Hours:</strong> Fri 10am-3:30pm, Sat 10am-4pm, Sun 10am-2pm</p>
+<p><strong>Notes:</strong> Don't block driveways/mailboxes; driveway for loading only</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>30634 Munger Drive, Livonia, MI 48154</address>
+    </Placemark>
+    <Placemark>
+      <name>50% Off Mid Century Redford</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Redford/48239/4652145" target="_blank">50% Off Mid Century Redford</a></h3>
+<p><strong>Hours:</strong> Thu 10am-4pm, Fri 10am-2pm, Sat 10am-4pm (50% OFF)</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>9160 Kinloch, Redford, MI 48239</address>
+    </Placemark>
+    <Placemark>
+      <name>Dig Redford Books &amp; Vintage</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Redford/48239/4700295" target="_blank">Dig Redford Books &amp; Vintage</a></h3>
+<p><strong>Hours:</strong> Sat 10am-4pm, Sun 10am-4pm, Mon 10am-4pm</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>12815 Norborne Ave, Redford, MI 48239</address>
+    </Placemark>
+    <Placemark>
+      <name>25% OFF SATURDAY Inkster</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Inkster/48141/4712547" target="_blank">25% OFF SATURDAY Inkster</a></h3>
+<p><strong>Hours:</strong> Fri 11am-4pm, Sat 11am-5pm (25% OFF), Sun 11am-4pm</p>
+<p><strong>Notes:</strong> Handicapped parking in driveway; others park at corner</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>28951 Cherry Hill, Inkster, MI 48141</address>
+    </Placemark>
+    <Placemark>
+      <name>25% off Westland Estate Sale</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Westland/48185/4712382" target="_blank">25% off Westland Estate Sale</a></h3>
+<p><strong>Hours:</strong> Fri 10am-4pm, Sat 10am-4pm (25% OFF), Sun 10am-2pm</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>36036 Tradition Drive, Westland, MI 48185</address>
+    </Placemark>
+    <Placemark>
+      <name>DATE CHANGE Dearborn</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Dearborn/48124/4694193" target="_blank">DATE CHANGE Dearborn</a></h3>
+<p><strong>Hours:</strong> Thu 9am-4pm, Sat 9am-2pm</p>
+<p><strong>Notes:</strong> No driveway parking; park on street</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>2449 Cornell St, Dearborn, MI 48124</address>
+    </Placemark>
+    <Placemark>
+      <name>25% OFF Dearborn Heights</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Dearborn-Heights/48127/4692834" target="_blank">25% OFF Dearborn Heights</a></h3>
+<p><strong>Hours:</strong> Fri 10am-4pm, Sat 10am-4pm, Sun 12pm-4pm</p>
+<p><strong>Notes:</strong> Don't park or block driveways</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>824 N Beech Daly Rd, Dearborn Heights, MI 48127</address>
+    </Placemark>
+    <Placemark>
+      <name>Historic Palmer Woods Detroit</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Detroit/48203/4715502" target="_blank">Historic Palmer Woods Detroit</a></h3>
+<p><strong>Hours:</strong> Fri 10am-4pm, Sat 10am-4pm, Sun 12pm-4pm</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>19285 Lucerne Drive, Detroit, MI 48203</address>
+    </Placemark>
+    <Placemark>
+      <name>50% OFF HENDREDON Southgate</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Southgate/48195/4683921" target="_blank">50% OFF HENDREDON Southgate</a></h3>
+<p><strong>Hours:</strong> Thu 10am-3pm, Fri 10am-3pm, Sat 10am-3pm</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>13272 Venness, Southgate, MI 48195</address>
+    </Placemark>
+    <Placemark>
+      <name>A MIXED BAG Southgate</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Southgate/48195/4707867" target="_blank">A MIXED BAG Southgate</a></h3>
+<p><strong>Hours:</strong> Fri 10am-4pm, Sat 10am-4pm, Sun 10am-4pm (50% OFF)</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>13683 Wesley, Southgate, MI 48195</address>
+    </Placemark>
+    <Placemark>
+      <name>50% OFF Brownstown Estate</name>
+      <description><![CDATA[
+<h3><a href="https://www.estatesales.net/MI/Brownstown/48183/4683858" target="_blank">50% OFF Brownstown Estate</a></h3>
+<p><strong>Hours:</strong> Fri 10am-4pm, Sat 10am-4pm (50% OFF)</p>
+<p><strong>Notes:</strong> Don't block neighbors' driveways</p>
+]]></description>
+      <styleUrl>#estateIcon</styleUrl>
+      <address>20762 Bishop Drive, Brownstown, MI 48183</address>
+    </Placemark>
+  </Document>
+</kml>
