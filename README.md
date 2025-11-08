@@ -1,4 +1,4 @@
-# Estate Sale Ninja 🥷
+# Estate Sale Ninja
 
 **A comprehensive methodology for finding, organizing, and planning estate sale routes**
 
@@ -7,6 +7,7 @@ Estate Sale Ninja is a systematic approach to discovering and documenting estate
 ## What This Project Does
 
 Estate Sale Ninja helps you:
+
 - **Find ALL estate sales** in your area using systematic ZIP code-based searches
 - **Organize sales geographically** into efficient route clusters
 - **Generate Google Maps imports** for visual planning
@@ -54,6 +55,7 @@ Estate Sale Ninja helps you:
 ### Key Discovery: ZIP Codes vs. City Names
 
 Through trial and error, we discovered that **ZIP code-based searches** yield 400% more results than city-based searches. This is because:
+
 - City names in URLs are not authoritative on EstateSales.NET
 - The site uses ZIP codes for actual location filtering
 - URLs redirect inconsistently based on city names
@@ -76,7 +78,8 @@ This example found **50 estate sales** within 30 miles of Bloomfield Hills, MI, 
 ### Step-by-Step Guide
 
 1. **Prepare Your Search**
-   ```
+
+   ```text
    Center Point: [Your City, State ZIP]
    Radius: [Miles]
    Date Range: [Start Date - End Date]
@@ -128,7 +131,8 @@ Name,Address,City,State,ZIP,Description
 - **Address:** Full street address for precise mapping
 - **Description:** Condensed highlights and key details
 
-**How to Import:**
+#### How to Import
+
 1. Go to [Google My Maps](https://www.google.com/maps/d/)
 2. Create a New Map
 3. Click "Import" and upload your CSV
@@ -137,6 +141,7 @@ Name,Address,City,State,ZIP,Description
 ### Markdown Documentation
 
 Comprehensive file with:
+
 - **Route Clusters:** Sales organized by geographic area
 - **Full Details:** Hours, address, company, contact info
 - **Tips Section:** Directions, terms, descriptions, payment methods
@@ -148,23 +153,27 @@ Comprehensive file with:
 This project currently documents the **manual methodology**. Future enhancements will include:
 
 ### Phase 1: Automation Tools
+
 - [ ] Python/Node scripts to automate ZIP code searches
 - [ ] Web scraping for automatic data collection
 - [ ] CSV and markdown generation scripts
 
 ### Phase 2: Enhanced Features
+
 - [ ] GPS coordinate collection for precise routing
 - [ ] Time-based route optimization (opening/closing hours)
 - [ ] Category filtering (MCM, tools, fashion, antiques)
 - [ ] Google Maps API integration for drive time estimates
 
 ### Phase 3: Web Application
+
 - [ ] Interactive web interface
 - [ ] User inputs: location, radius, date range
 - [ ] Automatic map generation and route planning
 - [ ] Mobile-responsive design
 
 ### Phase 4: Advanced Features
+
 - [ ] Weekly automated reports
 - [ ] Keyword alerts (e.g., "Steinway piano", "Eames chair")
 - [ ] Company ratings and reviews
@@ -173,12 +182,14 @@ This project currently documents the **manual methodology**. Future enhancements
 ## Why This Methodology Works
 
 Traditional estate sale searching is inefficient:
+
 - ❌ Browsing city-by-city misses sales due to URL inconsistencies
 - ❌ Single-location searches only show nearby sales
 - ❌ No route optimization leads to backtracking
 - ❌ Manual tracking is error-prone and time-consuming
 
 Estate Sale Ninja methodology:
+
 - ✅ ZIP code-based searches ensure complete coverage
 - ✅ Systematic approach finds 400% more sales
 - ✅ Geographic clustering minimizes travel time
@@ -188,6 +199,7 @@ Estate Sale Ninja methodology:
 ## Contributing
 
 This is an open methodology. Contributions welcome:
+
 - Additional search techniques
 - Automation scripts
 - Route optimization algorithms
