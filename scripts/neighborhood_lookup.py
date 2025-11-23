@@ -9,12 +9,16 @@ Uses free data sources to estimate neighborhood quality based on:
 
 No API keys required - uses publicly available data.
 
-Current status:
-- Income estimates: Working (Census-based ZIP code demographics)
-- CrimeGrade.org: Blocked by bot protection (403) - needs headless browser
+Data source priority:
+1. CrimeGrade.org via Playwright (if installed) - actual crime grades
+2. CrimeGrade.org via urllib (may be blocked by bot protection)
+3. Income estimates (Census-based) - always available fallback
+
+To enable Playwright support (recommended for best results):
+    pip install playwright
+    playwright install chromium
 
 Future enhancements (TODO):
-- CrimeGrade via Selenium/Playwright (actual crime grades)
 - Census block group level crime data (more granular than ZIP)
 - SpotCrime incident counts by address
 - Zillow home value scraping
@@ -28,6 +32,13 @@ import ssl
 import time
 from typing import Dict, Optional, Tuple
 from pathlib import Path
+
+# Check if Playwright is available
+try:
+    from playwright.sync_api import sync_playwright
+    PLAYWRIGHT_AVAILABLE = True
+except ImportError:
+    PLAYWRIGHT_AVAILABLE = False
 
 
 # Cache for API responses to avoid repeated lookups
@@ -106,9 +117,97 @@ def fetch_zip_data(zip_code: str, timeout: int = 10) -> Optional[Dict]:
         return None
 
 
+def fetch_crimegrade_playwright(zip_code: str) -> Optional[str]:
+    """
+    Fetch CrimeGrade.org page using Playwright (headless browser).
+
+    This bypasses bot protection that blocks simple HTTP requests.
+    Requires: pip install playwright && playwright install chromium
+
+    Args:
+        zip_code: 5-digit ZIP code
+
+    Returns:
+        HTML content of the page, or None if fetch fails
+    """
+    if not PLAYWRIGHT_AVAILABLE:
+        return None
+
+    url = f"https://crimegrade.org/safest-places-in-{zip_code}/"
+
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch(
+                headless=True,
+                args=['--no-sandbox', '--disable-gpu', '--disable-dev-shm-usage']
+            )
+            context = browser.new_context(
+                ignore_https_errors=True,
+                user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+            )
+            page = context.new_page()
+
+            try:
+                response = page.goto(url, wait_until='domcontentloaded', timeout=20000)
+
+                # Check for successful response
+                if response and response.status == 200:
+                    # Wait for content to render
+                    page.wait_for_timeout(2000)
+                    html = page.content()
+                    return html
+                else:
+                    return None
+
+            finally:
+                browser.close()
+
+    except Exception:
+        # Any error - return None to fall back to other methods
+        return None
+
+
+def fetch_crimegrade_urllib(zip_code: str, timeout: int = 15) -> Optional[str]:
+    """
+    Fetch CrimeGrade.org page using urllib (may be blocked by bot protection).
+
+    Args:
+        zip_code: 5-digit ZIP code
+        timeout: Request timeout in seconds
+
+    Returns:
+        HTML content of the page, or None if fetch fails
+    """
+    url = f"https://crimegrade.org/safest-places-in-{zip_code}/"
+
+    try:
+        ctx = ssl.create_default_context()
+        ctx.check_hostname = False
+        ctx.verify_mode = ssl.CERT_NONE
+
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+            'Accept-Language': 'en-US,en;q=0.5',
+            'Connection': 'keep-alive',
+        }
+
+        req = urllib.request.Request(url, headers=headers)
+        with urllib.request.urlopen(req, timeout=timeout, context=ctx) as response:
+            return response.read().decode('utf-8')
+
+    except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError):
+        return None
+
+
 def fetch_crimegrade(zip_code: str, timeout: int = 15) -> Optional[Dict]:
     """
     Fetch crime grade data from CrimeGrade.org for a ZIP code.
+
+    Tries multiple methods in order:
+    1. Playwright (headless browser) - best success rate
+    2. urllib with browser headers - may be blocked
+    3. Returns None to fall back to income estimates
 
     Args:
         zip_code: 5-digit ZIP code
@@ -120,7 +219,7 @@ def fetch_crimegrade(zip_code: str, timeout: int = 15) -> Optional[Dict]:
             'overall_grade': str,      # A+, A, A-, B+, B, B-, C+, C, C-, D+, D, D-, F
             'violent_grade': str,      # Grade for violent crime
             'property_grade': str,     # Grade for property crime
-            'crime_rate': str,         # Description like "lower than average"
+            'crime_description': str,  # Description like "lower than average"
         }
         Returns None if lookup fails.
     """
@@ -130,35 +229,25 @@ def fetch_crimegrade(zip_code: str, timeout: int = 15) -> Optional[Dict]:
     if zip_code in _crime_cache:
         return _crime_cache[zip_code]
 
-    url = f"https://crimegrade.org/safest-places-in-{zip_code}/"
+    html = None
 
-    try:
-        ctx = ssl.create_default_context()
-        ctx.check_hostname = False
-        ctx.verify_mode = ssl.CERT_NONE
+    # Try Playwright first (best success rate)
+    if PLAYWRIGHT_AVAILABLE:
+        html = fetch_crimegrade_playwright(zip_code)
 
-        # Use browser-like headers to avoid 403
-        headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-            'Accept-Language': 'en-US,en;q=0.5',
-            'Connection': 'keep-alive',
-        }
+    # Fall back to urllib if Playwright failed or unavailable
+    if html is None:
+        html = fetch_crimegrade_urllib(zip_code, timeout)
 
-        req = urllib.request.Request(url, headers=headers)
-        with urllib.request.urlopen(req, timeout=timeout, context=ctx) as response:
-            html = response.read().decode('utf-8')
-
-            # Parse the HTML for grade information
-            result = parse_crimegrade_html(html)
-            if result:
-                _crime_cache[zip_code] = result
-                save_cache()
+    # Parse the HTML if we got it
+    if html:
+        result = parse_crimegrade_html(html)
+        if result:
+            _crime_cache[zip_code] = result
+            save_cache()
             return result
 
-    except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError) as e:
-        # Return None on failure - will fall back to income-based estimate
-        return None
+    return None
 
 
 def parse_crimegrade_html(html: str) -> Optional[Dict]:
@@ -593,6 +682,9 @@ def main():
     print("Neighborhood Safety Rating Demo")
     print("=" * 70)
     print("Data sources: CrimeGrade.org (crime stats) + Census (income estimates)")
+    print(f"Playwright: {'AVAILABLE - will use headless browser' if PLAYWRIGHT_AVAILABLE else 'Not installed - using urllib fallback'}")
+    if not PLAYWRIGHT_AVAILABLE:
+        print("  To enable: pip install playwright && playwright install chromium")
     print("=" * 70)
 
     for loc in test_locations:
