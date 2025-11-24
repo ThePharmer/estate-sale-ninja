@@ -24,6 +24,15 @@ python3 scripts/verify_urls.py <kml> [delay_seconds]
 
 # Fix CSV with unquoted commas in Description field
 python3 scripts/fix_csv_properly.py <input.csv> [output.csv]
+
+# KML with neighborhood safety ratings (color-coded by area quality)
+python3 scripts/csv_to_kml_with_safety.py <csv> <markdown> [output.kml]
+
+# Organize by safety level first (prioritize safe areas)
+python3 scripts/csv_to_kml_with_safety.py <csv> <markdown> --sort-by-safety
+
+# Enrich CSV with safety ratings (adds Safety_Rating, Score columns)
+python3 scripts/enrich_with_safety.py <input.csv> [output.csv]
 ```
 
 ## Project Structure
@@ -53,6 +62,20 @@ examples/          Complete example datasets with source files
 - 100% count match (CSV rows = KML placemarks)
 - 90%+ URL match rate against markdown
 - All hours and parking info preserved
+
+## Neighborhood Safety Ratings
+
+Sales are color-coded by neighborhood quality based on ZIP code demographics:
+
+| Rating | Score | Icon Color | Description |
+|--------|-------|------------|-------------|
+| Excellent | 9-10 | Green | Upscale area, likely high-value items |
+| Good | 7-8 | Light Blue | Nice suburban area, quality expected |
+| Fair | 5-6 | Yellow | Average area, mixed quality |
+| Below Average | 3-4 | Orange | Working class area, use caution |
+| Poor | 1-2 | Red | Lower income area, be aware |
+
+Icon shapes indicate discount level: Stars=50% off, Diamond=25-30%, Circle=No discount
 
 ## See Also
 
